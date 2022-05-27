@@ -1,0 +1,14 @@
+package com.matheusgr.lunr;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SimilaridadeTest {
+
+	@Test
+	void testSimilaridade() {
+		fail("Not yet implemented");
+	}
+
+}

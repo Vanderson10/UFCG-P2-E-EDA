@@ -1,0 +1,72 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+class Pilha {
+	
+	private int[] pilha;
+    private int capacidade;
+    private int topo;
+
+    public Pilha(int capacidade) {
+        this.capacidade = capacidade;
+        this.topo = -1;
+        this.pilha = new int[capacidade];
+    }
+
+    public boolean isEmpty() {
+        return this.topo == -1;
+    }
+
+    public boolean isFull() {
+        return this.topo == (capacidade - 1);
+    }
+
+    public void push(int n) {
+        
+        if (this.isFull())
+            throw new RuntimeException("FullStackException");
+        this.topo += 1;
+        this.pilha[topo] = n;
+    }
+    
+    public int pop() {
+        if (this.isEmpty())
+            throw new RuntimeException("EmptyStackException");
+        int valor_topo = this.pilha[topo];
+        topo -= 1;
+        return valor_topo; 
+    }
+
+    public int peek() {
+        if (this.isEmpty())
+            throw new RuntimeException("EmptyStackException");
+        return this.pilha[topo];
+    }
+
+    public int size() {
+        return this.topo + 1;
+    }
+    
+    public  void inverteIndex(int indice) {
+    	int[] aux1 = new int[this.pilha.length];
+    	int[] aux2 = new int[this.pilha.length];
+    	
+    	
+    }
+   
+    
+    public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int tamanho = sc.nextInt();
+		String[] sequencia = sc.nextLine().split(" ");
+		int indice = sc.nextInt();
+		
+        Pilha pilha = new Pilha(tamanho);
+        for (int i=0; i<sequencia.length;i++) {
+        	pilha.push(Integer.parseInt(sequencia[i]));
+        }
+        pilha.inverteIndex(indice);
+        System.out.println(Arrays.toString(pilha.pilha));
+    }
+
+}

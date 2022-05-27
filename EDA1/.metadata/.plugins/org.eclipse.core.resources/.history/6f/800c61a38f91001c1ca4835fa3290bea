@@ -1,0 +1,14 @@
+package Fila_Pilha;
+
+import java.util.Scanner;
+
+public class InverteFrase {
+	
+	Scanner sc = new Scanner(System.in);
+	String frase = sc.nextLine();
+	
+	for (int i = 0; i < frase.length; i++) {
+		
+	}
+
+}

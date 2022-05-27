@@ -1,0 +1,22 @@
+package com.matheusgr.lunr.busca;
+
+import java.util.Map;
+
+import com.matheusgr.lunr.documento.Documento;
+import com.matheusgr.lunr.documento.DocumentoService;
+
+public class BuscaAvancada implements Busca{
+
+	@Override
+	public Map<Documento, Integer> busca(DocumentoService ds) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String[][] descreveConsulta() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

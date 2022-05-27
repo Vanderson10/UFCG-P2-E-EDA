@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DocumentoTest" project="Lunr" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.matheusgr.lunr.DocumentoTest" time="0.756" displayname="DocumentoTest" uniqueid="[engine:junit-jupiter]/[class:com.matheusgr.lunr.DocumentoTest]">
+    <testcase name="testHTML" classname="com.matheusgr.lunr.DocumentoTest" time="0.59" displayname="testHTML()" uniqueid="[engine:junit-jupiter]/[class:com.matheusgr.lunr.DocumentoTest]/[method:testHTML()]"/>
+    <testcase name="testJava" classname="com.matheusgr.lunr.DocumentoTest" time="0.028" displayname="testJava()" uniqueid="[engine:junit-jupiter]/[class:com.matheusgr.lunr.DocumentoTest]/[method:testJava()]"/>
+    <testcase name="testAusente" classname="com.matheusgr.lunr.DocumentoTest" time="0.034" displayname="testAusente()" uniqueid="[engine:junit-jupiter]/[class:com.matheusgr.lunr.DocumentoTest]/[method:testAusente()]"/>
+    <testcase name="testTexto1" classname="com.matheusgr.lunr.DocumentoTest" time="0.079" displayname="testTexto1()" uniqueid="[engine:junit-jupiter]/[class:com.matheusgr.lunr.DocumentoTest]/[method:testTexto1()]"/>
+  </testsuite>
+</testrun>

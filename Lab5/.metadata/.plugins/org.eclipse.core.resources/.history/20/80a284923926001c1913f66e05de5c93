@@ -1,0 +1,29 @@
+package com.matheusgr.lunr;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.matheusgr.lunr.documento.DocumentoController;
+import com.matheusgr.similaridade.SimilaridadeService;
+
+class SimilaridadeTest extends BaseTest{
+	
+	private SimilaridadeService ss;
+	private DocumentoController dc;
+
+	@Test
+	void testSimilaridadeq() {
+		dc.adicionaDocumentoTxt("Uma casa feliz é uma casa bonita", "Uma casa feliz é uma casa bonita");
+		dc.adicionaDocumentoTxt("Um dia feliz é um bom dia", "Um dia feliz é um bom dia");
+		System.out.println(ss.similaridade("Uma casa feliz é uma casa bonita", "Um dia feliz é um bom dia"));
+	}
+	
+	@Test 
+	void testSimilaridade() {
+		double similaridadeAtual = this.similaridadeController.similaridade(TEXTO1_ID, TEXTO2_ID);
+		double similaridadeEsperada = 0.5;
+		assertEquals(similaridadeEsperada,similaridadeAtual,0.01);
+	}
+
+}

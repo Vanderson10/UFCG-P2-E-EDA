@@ -1,0 +1,16 @@
+package teste;
+
+import java.util.Scanner;
+
+public class InverteFrase {
+	
+	Scanner sc = new Scanner(System.in);
+	String frase = "ola mundo";
+	
+	while (frase==" "){
+		
+	}
+	
+
+	}
+}

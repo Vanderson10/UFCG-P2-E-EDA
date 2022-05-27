@@ -1,0 +1,50 @@
+package com.matheusgr.lunr.documento;
+
+import java.util.Map;
+
+import biblitex.TransformaTexto;
+
+public class DocumentoSuper implements Documento{
+	
+	private String id;
+	private String original;
+	private String limpo;
+	private Map<String, String> metadados;
+	private String[] split;
+	
+	public DocumentoSuper(String id, String original, String limpo, Map metadados, String[] split) {
+		this.id = id;
+		this.original = original;
+		this.limpo = limpo;
+		this.metadados = metadados;
+		this.split = split;
+	}
+
+	@Override
+	public double metricaTextoUtil() {
+		long extractedSize = (new TransformaTexto()).transforma(TransformaTexto.Algoritmos.cleanSpaces, this.limpo)
+				.length();
+		return (1.0 * extractedSize) / this.original.length();
+	}
+
+	@Override
+	public String getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String[] getTexto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Map<String, String> getMetadados() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

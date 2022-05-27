@@ -1,0 +1,14 @@
+
+public class Node {
+	
+	int numero;
+    Node next;
+    Node prev;
+    
+    public Node(int numero) {
+        this.numero = numero;
+        this.prev = null;
+        this.next = null;
+    }   
+
+}

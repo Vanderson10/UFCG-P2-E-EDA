@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;InverteFrase.java&apos; to &apos;Eda/src/teste&apos;&#x0A;- Original project: &apos;Eda&apos;&#x0A;- Destination element: &apos;Eda/src/teste&apos;&#x0A;- Original element: &apos;Fila_Pilha.InverteFrase.java&apos;" description="Copy compilation unit" destination="/src&lt;teste" element1="/src&lt;Fila_Pilha{InverteFrase.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1645280927256" units="1" version="1.0"/>
+</session>

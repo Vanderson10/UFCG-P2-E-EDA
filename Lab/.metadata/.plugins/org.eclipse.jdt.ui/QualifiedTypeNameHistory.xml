@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.matheusgr.lunr.documento.DocumentoSuper"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.dv.dtd.IDDatatypeValidator"/>
+    <fullyQualifiedTypeName name="com.matheusgr.lunr.documento.Documento"/>
+    <fullyQualifiedTypeName name="sun.tools.tree.SuperExpression"/>
+    <fullyQualifiedTypeName name="com.matheusgr.lunr.documento.DocumentoAbstract"/>
+    <fullyQualifiedTypeName name="biblitex.TransformaTexto"/>
+</qualifiedTypeNameHistroy>

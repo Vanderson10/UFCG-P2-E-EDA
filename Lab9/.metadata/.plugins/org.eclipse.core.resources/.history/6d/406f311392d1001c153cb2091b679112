@@ -1,0 +1,68 @@
+package Lab9;
+
+import java.util.Scanner;
+
+public class Teste {
+	
+	private String s1; 
+	private String s2;
+
+    public void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Menu");
+        System.out.println("a) Ler uma string s1");
+        System.out.println("b) Imprimir tamanho da string s1");
+        System.out.println("c) Comparar a string s1 com a string s2");
+        System.out.println("d) Concatenar a string s1 com a string s2");
+        System.out.println("e) Imprimir a string s1 de forma inversa");
+        System.out.println("x) Sair do programa");
+        String escolha = sc.nextLine();
+        
+        while (escolha!="x") {
+        	if (escolha.equalsIgnoreCase("a")) {
+        		ler();
+            }
+        	if (escolha.equalsIgnoreCase("b")) {
+                System.out.println(imprimirTamanho());
+            }
+        	if (escolha.equalsIgnoreCase("c")) {
+        		System.out.println("Digite a string s2:");
+        		this.s2 = sc.nextLine();
+        		System.out.println(comparar(s2));
+        	}
+        	if (escolha.equalsIgnoreCase("d")) {
+        		System.out.println(concatenar());
+        	}
+        	if (escolha.equalsIgnoreCase("e")) {
+        		System.out.println(imprimirInversa());
+        	}
+        }
+    }
+    
+    private void ler() {
+    	Scanner sc = new Scanner(System.in);
+    	System.out.println("Digite a string s1:");
+        this.s1 = sc.nextLine();
+    }
+    
+    private int imprimirTamanho() {
+    	return this.s1.length();
+    }
+    
+    private String comparar(String s2) {
+    	if (s1.equalsIgnoreCase(s2)) {
+            return "Strings iguais";
+        } else {
+            return "Strings diferentes";
+        }
+    }
+    
+    private String concatenar() {
+    	return this.s1 + " " + this.s2;
+    }
+    
+    private String imprimirInversa() {
+    	return new StringBuilder(this.s1).reverse().toString();
+    }
+}

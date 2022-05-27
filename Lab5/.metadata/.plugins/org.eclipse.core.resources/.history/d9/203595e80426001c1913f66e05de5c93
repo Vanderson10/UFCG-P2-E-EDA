@@ -1,0 +1,16 @@
+package com.matheusgr.lunr;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.matheusgr.lunr.documento.Documento;
+
+class SimilaridadeTest {
+
+	@Test
+	void testSimilaridade() {
+		
+	}
+
+}

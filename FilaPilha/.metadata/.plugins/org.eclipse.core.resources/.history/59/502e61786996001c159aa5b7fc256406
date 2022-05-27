@@ -1,0 +1,73 @@
+package Lab8;
+
+import java.util.NoSuchElementException;
+import java.util.Scanner;
+
+class Node {
+    
+    int num;
+    Node next;
+    Node prev;
+    
+    public Node(int num) {
+        this.num = num;
+        this.prev = null;
+        this.next = null;
+    }   
+}
+
+
+class LinkedList {
+	
+	public static void main(String[] args){
+		Node a = new Node(8);
+		Node b = new Node(3);
+		a.next = b;
+		b.prev = a;
+	}
+	
+	private Node head;
+    private Node tail;
+    private int size;
+    
+    public LinkedList() {
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+    }
+    
+    public boolean isEmpty() {
+        return this.head == null;
+    }
+    
+    public void addLast(int num) {
+        Node newNode = new Node(num);
+            
+        if(isEmpty()) {
+            this.head = newNode;
+            this.tail = newNode;
+        } else {
+            this.tail.next = newNode;
+            newNode.prev = tail;
+            this.tail = newNode;
+        }
+
+        this.size += 1;
+    }
+    
+    public int get(int index) {
+        if (index < 0 || index >= size)
+            throw new IndexOutOfBoundsException();
+            
+        Node aux = this.head;
+            
+        for (int i = 0; i < index; i++)
+            aux = aux.next;
+            
+        return aux.num;
+    }
+
+}
+
+
+

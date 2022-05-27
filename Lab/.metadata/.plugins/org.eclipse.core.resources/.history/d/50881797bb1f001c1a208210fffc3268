@@ -1,0 +1,57 @@
+package com.matheusgr.lunr.documento;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import biblitex.TransformaTexto;
+
+/**
+ * Documento base java. As palavras-chave da linguagem ainda são preservadas
+ * (como public, private, etc), mas elimina-se documentação e comentários.
+ */
+class DocumentoJava extends DocumentoSuper {
+	
+	private Map<String, String> metadados;
+
+	/**
+	 * Cria o DocumentoJava, extraindo o texot base.
+	 * 
+	 * @param id       ID do documento a ser criado.
+	 * @param original Código java original.
+	 */
+	public DocumentoJava(String id, String original) {
+		super(id, original);
+	}
+	
+	@Override
+	public Map<String, String> getMetadados() {
+		if (this.metadados != null) {
+			return this.metadados;
+		}
+		this.metadados = extractData(super.getOriginal());
+		this.metadados.put("LINHAS", "" + super.getOriginal().chars().filter((value) -> '\n' == value).count());
+		this.metadados.put("TAMANHO", "" + super.getLimpo().length());
+		this.metadados.put("METADATADATE", "" + System.currentTimeMillis());
+		this.metadados.put("TIPO", "" + "java");
+		return this.metadados;
+	}
+	
+	@Override
+	public double metricaTextoUtil() {
+		long extractedSize = (new TransformaTexto()).transforma(TransformaTexto.Algoritmos.cleanSpaces, this.limpo)
+				.length();
+		return (1.0 * extractedSize) / super.getOriginal().length();
+	}
+
+	/*
+	 * Metadados particulares de java: número de imports e autor da classe.
+	 */
+	private Map<String, String> extractData(String original2) {
+		Map<String, String> metadados2 = new HashMap<>();
+		metadados2.put("IMPORTS", "" + ((super.getLimpo().length() - super.getLimpo().replaceAll("import ", "").length()) / 7));
+		metadados2.put("AUTHOR", "" + (super.getLimpo().indexOf("@author") != -1 ? "TRUE" : ""));
+		return metadados2;
+	}
+		
+
+}

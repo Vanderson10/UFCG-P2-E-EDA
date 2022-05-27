@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="eda.Aluno"/>
+    <fullyQualifiedTypeName name="HTChaining.HTChaining"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Lab9.HashSet"/>
+    <fullyQualifiedTypeName name="sun.security.timestamp.TSRequest"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="Lab9.WordCloud"/>
+    <fullyQualifiedTypeName name="Lab10.BfsDireita.BST"/>
+    <fullyQualifiedTypeName name="Lab10.BfsDireita"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="Lab10.SomaFolhas"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Deque"/>
+    <fullyQualifiedTypeName name="Lab12.Rotacoes"/>
+    <fullyQualifiedTypeName name="RotacaoOk.Rotacao"/>
+</qualifiedTypeNameHistroy>

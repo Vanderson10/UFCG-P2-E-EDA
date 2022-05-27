@@ -1,0 +1,5 @@
+package com.matheusgr.lunr.documento;
+
+public class DocumentoAbstract {
+
+}

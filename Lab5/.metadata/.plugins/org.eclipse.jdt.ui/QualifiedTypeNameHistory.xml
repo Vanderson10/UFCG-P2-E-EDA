@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="org.junit.platform.commons.util.CollectionUtils"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.code.Type.IntersectionClassType"/>
+    <fullyQualifiedTypeName name="com.matheusgr.lunr.SimilaridadeTest"/>
+    <fullyQualifiedTypeName name="com.matheusgr.lunr.documento.Documento"/>
+    <fullyQualifiedTypeName name="com.matheusgr.lunr.DocumentoTest"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="com.matheusgr.lunr.busca.BuscaAvancada"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="com.matheusgr.lunr.busca.Busca"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.matheusgr.similaridade.SimilaridadeService"/>
+    <fullyQualifiedTypeName name="com.matheusgr.lunr.documento.DocumentoController"/>
+    <fullyQualifiedTypeName name="com.matheusgr.lunr.BaseTest"/>
+</qualifiedTypeNameHistroy>

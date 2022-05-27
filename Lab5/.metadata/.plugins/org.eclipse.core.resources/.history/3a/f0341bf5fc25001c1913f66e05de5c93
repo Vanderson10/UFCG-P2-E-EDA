@@ -1,0 +1,32 @@
+package com.matheusgr.lunr.busca;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.matheusgr.lunr.documento.Documento;
+import com.matheusgr.lunr.documento.DocumentoService;
+
+public class BuscaAvancada implements Busca{
+	private Map<String, String> metadados;
+
+	@Override
+	public Map<Documento, Integer> busca(DocumentoService ds) {
+		Map<Documento, Integer> respostaDocumento = new HashMap<>();
+		for (String termo : this.metadados.keySet()) {
+			if (termo.isBlank() || this.metadados.get(termo)) {
+				continue;
+			}
+			for (Documento d : ds.busca(termo)) {
+				respostaDocumento.put(d, respostaDocumento.getOrDefault(d, 0) + 1);
+			}
+		}
+		return respostaDocumento;
+	}
+
+	@Override
+	public String[][] descreveConsulta() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

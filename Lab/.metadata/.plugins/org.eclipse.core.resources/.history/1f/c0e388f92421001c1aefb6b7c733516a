@@ -1,0 +1,39 @@
+package com.matheusgr.lunr.documento;
+
+import java.util.Map;
+
+public class DocumentoAbstract implements Documento{
+	
+	private String id;
+	private String original;
+	
+	public DocumentoAbstract(String id, String original) {
+		this.id = id;
+		this.original = original;
+	}
+
+	@Override
+	public double metricaTextoUtil() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String[] getTexto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Map<String, String> getMetadados() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

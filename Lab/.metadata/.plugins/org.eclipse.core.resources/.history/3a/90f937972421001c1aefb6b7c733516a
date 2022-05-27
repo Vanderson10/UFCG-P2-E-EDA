@@ -1,0 +1,13 @@
+package com.matheusgr.lunr.documento;
+
+public class DocumentoAbstract {
+	
+	private String id;
+	private String original;
+	
+	public DocumentoAbstract(String id, String original) {
+		this.id = id;
+		this.original = original;
+	}
+
+}

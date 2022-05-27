@@ -1,0 +1,18 @@
+INDEX VERSION 1.131+/home/vanderson/eclipse-workspace/Lab5/.metadata/.plugins/org.eclipse.jdt.core
+3632488635.index
+646308851.index
+2684899059.index
+3420464572.index
+3399818902.index
+1128158415.index
+2010022433.index
+2589463384.index
+2554317381.index
+1924622038.index
+3096086159.index
+2801238083.index
+2560159419.index
+2763711213.index
+3546816113.index
+385108051.index
+1386021156.index

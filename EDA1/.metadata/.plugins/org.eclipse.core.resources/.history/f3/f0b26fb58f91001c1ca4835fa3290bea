@@ -1,0 +1,16 @@
+package Fila_Pilha;
+
+import java.util.Scanner;
+
+public class InverteFrase {
+	
+	Scanner sc = new Scanner(System.in);
+	String frase = sc.nextLine();
+	int quant=0;
+	while (frase==" "){
+		quant++;
+	}
+	
+
+	}
+}
